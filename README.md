@@ -1,7 +1,7 @@
 # seleniumFramework
 Selenium Framework project using Java , Maven , TestNG and POM
 
-And weare using BDD and DDT frameworks in the project
+And we are using BDD and DDT frameworks in the project
 
 # Tech stack:
 - Java
@@ -10,4 +10,4 @@ And weare using BDD and DDT frameworks in the project
 - BDD Framework
 - DDT Framework
 
-It's a demo for using Github and Selenium
+It's a demo project for using Github and Selenium
