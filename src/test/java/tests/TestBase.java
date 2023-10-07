@@ -71,22 +71,18 @@ public class TestBase extends AbstractTestNGCucumberTests
 
 		else if (browserName.equalsIgnoreCase("chrome-headless")) 
 		{
-<<<<<<< HEAD
+
 			System.setProperty("webdriver.chrome.driver", 
 					System.getProperty("user.dir")+"/drivers/chromedriver.exe");
-=======
+
 			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/drivers/chromedriver.exe");
->>>>>>> 77aaa2c03b2096cd0b51d58ec8396002788f1d03
+
 			ChromeOptions options = new ChromeOptions(); 
 			options.addArguments("--headless"); 
 			options.addArguments("--window-size=1920,1080"); 
 			driver = new ChromeDriver(options); 
 		}
-<<<<<<< HEAD
 
-=======
-		
->>>>>>> 77aaa2c03b2096cd0b51d58ec8396002788f1d03
 		else if (browserName.equalsIgnoreCase("safari")) {
 			driver = new SafariDriver(); 
 		}
