@@ -52,12 +52,14 @@ public class TestBase extends AbstractTestNGCucumberTests
 	@Parameters({"browser"})
 	public void startDriver(@Optional("chrome") String browserName) 
 	{
-		if (browserName.equalsIgnoreCase("chrome")) {
+		if (browserName.equalsIgnoreCase("chrome")) 
+		{
 			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/drivers/chromedriver.exe");
 			driver = new ChromeDriver(chromeOption()); 
 		}
 
-		else if(browserName.equalsIgnoreCase("firefox")) {
+		else if(browserName.equalsIgnoreCase("firefox")) 
+		{
 			driver = new FirefoxDriver(firefoxOption()); 
 		}
 
@@ -67,6 +69,15 @@ public class TestBase extends AbstractTestNGCucumberTests
 			driver = new InternetExplorerDriver(); 
 		}
 
+		else if (browserName.equalsIgnoreCase("chrome-headless")) 
+		{
+			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/drivers/chromedriver.exe");
+			ChromeOptions options = new ChromeOptions(); 
+			options.addArguments("--headless"); 
+			options.addArguments("--window-size=1920,1080"); 
+			driver = new ChromeDriver(options); 
+		}
+		
 		else if (browserName.equalsIgnoreCase("safari")) {
 			driver = new SafariDriver(); 
 		}
