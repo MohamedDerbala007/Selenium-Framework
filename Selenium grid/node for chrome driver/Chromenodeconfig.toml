@@ -1,0 +1,8 @@
+[node]
+detect-drivers = false
+[[node.driver-configuration]]
+max-sessions = 1
+display-name = "Chrome"
+stereotype = "{\"browserName\": \"chrome\", \"browserVersion\": \"94\", \"platformName\": \"windows\"}"
+[server]
+port = 5556

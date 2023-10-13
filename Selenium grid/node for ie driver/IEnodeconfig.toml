@@ -1,0 +1,8 @@
+[node]
+detect-drivers = false
+[[node.driver-configuration]]
+max-sessions = 1
+display-name = "IE"
+stereotype = "{\"browserName\": \"IE\", \"browserVersion\": \"94\", \"platformName\": \"windows\", \"goog:chromeOptions\": {\"binary\": \"/Applications/Google Chrome Beta.app/Contents/MacOS/Google Chrome Beta\"}}"
+[server]
+port = 5558

@@ -60,6 +60,7 @@ public class TestBase extends AbstractTestNGCucumberTests
 
 		else if(browserName.equalsIgnoreCase("firefox")) 
 		{
+			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"/drivers/geckodriver.exe");
 			driver = new FirefoxDriver(firefoxOption()); 
 		}
 
