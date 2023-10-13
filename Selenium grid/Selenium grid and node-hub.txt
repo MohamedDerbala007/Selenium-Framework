@@ -1,0 +1,7 @@
+java -jar selenium-server-4.14.0.jar hub
+
+java -jar selenium-server-4.14.0.jar node --port 5555 or 5556 or 5557
+
+if i have a config file :
+
+java -jar selenium-server-4.14.0.jar node --config (name of config file)

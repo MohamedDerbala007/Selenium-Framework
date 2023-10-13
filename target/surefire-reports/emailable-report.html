@@ -9,38 +9,13 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">nopcommerce Regression Suite</th></tr>
-<tr><td><a href="#t0">Regression Test</a></td><td class="num">3</td><td class="num">0</td><td class="num attn">1</td><td class="num">126,490</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Regression Test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">10,467</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">nopcommerce Regression Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Regression Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">tests.UserRegistrationTestUsingJavaFaker</td><td><a href="#m0">userCanRegisterSuccessfully</a></td><td rowspan="1">1696953430107</td><td rowspan="1">121916</td></tr><tr><th colspan="4">Regression Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">tests.ContactUsTest</td><td><a href="#m1">UserCanContactUs</a></td><td rowspan="1">1696953426116</td><td rowspan="1">1645</td></tr><tr class="passedodd"><td rowspan="1">tests.ProductHoverMenuTest</td><td><a href="#m2">UserCanSelectSubCategoryFromMainMenu</a></td><td rowspan="1">1696953427782</td><td rowspan="1">960</td></tr><tr class="passedeven"><td rowspan="1">tests.SearchProductTest</td><td><a href="#m3">UserCanSearchForProducts</a></td><td rowspan="1">1696953428755</td><td rowspan="1">1338</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">nopcommerce Regression Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Regression Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">tests.ContactUsTest</td><td><a href="#m0">UserCanContactUs</a></td><td rowspan="1">1696955475198</td><td rowspan="1">2441</td></tr><tr class="passedodd"><td rowspan="1">tests.ProductHoverMenuTest</td><td><a href="#m1">UserCanSelectSubCategoryFromMainMenu</a></td><td rowspan="1">1696955477664</td><td rowspan="1">1032</td></tr><tr class="passedeven"><td rowspan="1">tests.SearchProductTest</td><td><a href="#m2">UserCanSearchForProducts</a></td><td rowspan="1">1696955478714</td><td rowspan="1">1634</td></tr><tr class="passedodd"><td rowspan="1">tests.UserRegistrationTestUsingJavaFaker</td><td><a href="#m3">userCanRegisterSuccessfully</a></td><td rowspan="1">1696955480365</td><td rowspan="1">4812</td></tr></tbody>
 </table>
-<h2>Regression Test</h2><h3 id="m0">tests.UserRegistrationTestUsingJavaFaker#userCanRegisterSuccessfully</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;a.ico-login&quot;}
-  (Session info: headless chrome=117.0.5938.134)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
-System info: host: &apos;DESKTOP-VU5DHEC&apos;, ip: &apos;192.168.1.21&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.134, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\EL-MAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53441}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d8ae04e82d00d43db6bd1783912d5eb7
-*** Element info: {Using=css selector, value=a.ico-login}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:411)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
-	at pages.PageBase.clickButton(PageBase.java:26)
-	at pages.HomePage.openLoginPage(HomePage.java:48)
-	at tests.UserRegistrationTestUsingJavaFaker.userCanRegisterSuccessfully(UserRegistrationTestUsingJavaFaker.java:35)
-... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">tests.ContactUsTest#UserCanContactUs</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">tests.ProductHoverMenuTest#UserCanSelectSubCategoryFromMainMenu</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">tests.SearchProductTest#UserCanSearchForProducts</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Regression Test</h2><h3 id="m0">tests.ContactUsTest#UserCanContactUs</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">tests.ProductHoverMenuTest#UserCanSelectSubCategoryFromMainMenu</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">tests.SearchProductTest#UserCanSearchForProducts</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">tests.UserRegistrationTestUsingJavaFaker#userCanRegisterSuccessfully</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
