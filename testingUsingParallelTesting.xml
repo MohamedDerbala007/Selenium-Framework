@@ -1,17 +1,16 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-<suite name="nopcommerce Regression Suite">
-
-  <test name="Chrome Regression Test" preserve-order="true">
+<suite name="nopcommerce Regression Suite" >
+  <test name="Chrome Regression Test">
   <parameter name="browser" value="chrome"></parameter>
     <classes>
-      <class name="tests.UserRegistrationTestUsingJavaFaker"/>
+      <class name="tests.UserRegistrationUsingParallelTesting"/>
     </classes>
   </test> 
   
-    <test name="Firefox Regression Test" preserve-order="true">
-  <parameter name="browser" value="firefox"></parameter>
+  <test name="FirefoxRegression Test">
+    <parameter name="browser" value="chrome"></parameter>
     <classes>
-      <class name="tests.UserRegistrationTestUsingJavaFaker"/>
+      <class name="tests.UserRegistrationUsingParallelTesting"/>
     </classes>
   </test> 
 </suite> 
