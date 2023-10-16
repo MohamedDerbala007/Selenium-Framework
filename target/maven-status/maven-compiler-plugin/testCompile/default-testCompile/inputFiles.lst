@@ -1,6 +1,7 @@
 D:\Testing courses and Work\AutomationCourseWithSelenuim\TestFramework\Selenium-Framework\src\test\java\tests\UserRegistrationTestUsingWithDDTAndDataProvider.java
 D:\Testing courses and Work\AutomationCourseWithSelenuim\TestFramework\Selenium-Framework\src\test\java\tests\TestBase.java
 D:\Testing courses and Work\AutomationCourseWithSelenuim\TestFramework\Selenium-Framework\src\test\java\tests\UserRegistrationTest.java
+D:\Testing courses and Work\AutomationCourseWithSelenuim\TestFramework\Selenium-Framework\src\test\java\tests\UserRegistrationUsingParallelTesting.java
 D:\Testing courses and Work\AutomationCourseWithSelenuim\TestFramework\Selenium-Framework\src\test\java\tests\UserLoginTest.java
 D:\Testing courses and Work\AutomationCourseWithSelenuim\TestFramework\Selenium-Framework\src\test\java\tests\SearchProductTest.java
 D:\Testing courses and Work\AutomationCourseWithSelenuim\TestFramework\Selenium-Framework\src\test\java\tests\UserRegistrationTestUsingWithDDTAndJSON.java
@@ -16,6 +17,7 @@ D:\Testing courses and Work\AutomationCourseWithSelenuim\TestFramework\Selenium-
 D:\Testing courses and Work\AutomationCourseWithSelenuim\TestFramework\Selenium-Framework\src\test\java\tests\ProductHoverMenuTest.java
 D:\Testing courses and Work\AutomationCourseWithSelenuim\TestFramework\Selenium-Framework\src\test\java\utilities\Helper.java
 D:\Testing courses and Work\AutomationCourseWithSelenuim\TestFramework\Selenium-Framework\src\test\java\data\ExcelReader.java
+D:\Testing courses and Work\AutomationCourseWithSelenuim\TestFramework\Selenium-Framework\src\test\java\tests\TestBase2.java
 D:\Testing courses and Work\AutomationCourseWithSelenuim\TestFramework\Selenium-Framework\src\test\java\tests\EmailAFriendTest.java
 D:\Testing courses and Work\AutomationCourseWithSelenuim\TestFramework\Selenium-Framework\src\test\java\tests\SearchProductUsingAutoSuggest.java
 D:\Testing courses and Work\AutomationCourseWithSelenuim\TestFramework\Selenium-Framework\src\test\java\tests\AddProductToShoppingCartTest.java

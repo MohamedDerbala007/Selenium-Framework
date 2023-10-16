@@ -1,19 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [nopcommerce Regression Suite]" guice-stage="DEVELOPMENT" verbose="0">
-  <parameter name="browser" value="chrome-headless"/>
-  <test thread-count="5" name="Regression Test(failed)" verbose="0">
+<suite name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="5" name="Surefire test(failed)" verbose="0">
     <classes>
-      <class name="tests.UserRegistrationTestUsingJavaFaker">
+      <class name="tests.ProductHoverMenuTest">
         <methods>
           <include name="startDriver"/>
           <include name="stopDriver"/>
-          <include name="screenshotOnFailure"/>
           <include name="tearDownClass"/>
-          <include name="userCanRegisterSuccessfully"/>
+          <include name="screenshotOnFailure"/>
+          <include name="UserCanSelectSubCategoryFromMainMenu"/>
           <include name="setUpClass"/>
         </methods>
-      </class> <!-- tests.UserRegistrationTestUsingJavaFaker -->
+      </class> <!-- tests.ProductHoverMenuTest -->
+      <class name="tests.SearchProductTest">
+        <methods>
+          <include name="startDriver"/>
+          <include name="stopDriver"/>
+          <include name="UserCanSearchForProducts"/>
+          <include name="tearDownClass"/>
+          <include name="screenshotOnFailure"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- tests.SearchProductTest -->
+      <class name="tests.UserLoginTest">
+        <methods>
+          <include name="startDriver"/>
+          <include name="userCanLoginSuccessfully"/>
+          <include name="userCanLogoutSuccessfully"/>
+          <include name="stopDriver"/>
+          <include name="tearDownClass"/>
+          <include name="screenshotOnFailure"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- tests.UserLoginTest -->
+      <class name="tests.ContactUsTest">
+        <methods>
+          <include name="startDriver"/>
+          <include name="stopDriver"/>
+          <include name="tearDownClass"/>
+          <include name="screenshotOnFailure"/>
+          <include name="UserCanContactUs"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- tests.ContactUsTest -->
     </classes>
-  </test> <!-- Regression Test(failed) -->
-</suite> <!-- Failed suite [nopcommerce Regression Suite] -->
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->
