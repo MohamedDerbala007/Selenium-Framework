@@ -3,16 +3,47 @@
 <suite name="Failed suite [Surefire suite]" verbose="0">
   <test thread-count="5" name="Surefire test(failed)" verbose="0">
     <classes>
+      <class name="tests.ProductHoverMenuTest">
+        <methods>
+          <include name="startDriver"/>
+          <include name="stopDriver"/>
+          <include name="tearDownClass"/>
+          <include name="screenshotOnFailure"/>
+          <include name="UserCanSelectSubCategoryFromMainMenu"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- tests.ProductHoverMenuTest -->
+      <class name="tests.SearchProductTest">
+        <methods>
+          <include name="startDriver"/>
+          <include name="stopDriver"/>
+          <include name="UserCanSearchForProducts"/>
+          <include name="tearDownClass"/>
+          <include name="screenshotOnFailure"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- tests.SearchProductTest -->
       <class name="tests.UserLoginTest">
         <methods>
           <include name="startDriver"/>
           <include name="userCanLoginSuccessfully"/>
+          <include name="userCanLogoutSuccessfully"/>
           <include name="stopDriver"/>
-          <include name="screenshotOnFailure"/>
           <include name="tearDownClass"/>
+          <include name="screenshotOnFailure"/>
           <include name="setUpClass"/>
         </methods>
       </class> <!-- tests.UserLoginTest -->
+      <class name="tests.ContactUsTest">
+        <methods>
+          <include name="startDriver"/>
+          <include name="stopDriver"/>
+          <include name="tearDownClass"/>
+          <include name="screenshotOnFailure"/>
+          <include name="UserCanContactUs"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- tests.ContactUsTest -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->

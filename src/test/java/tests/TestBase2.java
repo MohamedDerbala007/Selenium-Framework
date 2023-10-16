@@ -15,25 +15,24 @@ import org.testng.annotations.Parameters;
 
 import utilities.Helper;
 
-public class TestBase2 {
+public class TestBase2 
+{
 	
 	public static String BaseURL = "http://demo.nopcommerce.com" ; 
 
-	protected ThreadLocal<RemoteWebDriver> driver = null ; 
+	 protected ThreadLocal<RemoteWebDriver> driver = ThreadLocal.withInitial(() -> null);
 
-	@BeforeTest
-	@Parameters({"browser"})
-	public void setUp(@Optional("chrome") String browser) throws MalformedURLException 
-	{
-		driver = new ThreadLocal<RemoteWebDriver>(); 
-		DesiredCapabilities caps = new DesiredCapabilities(); 
-		caps.setCapability("browserName", browser);
-		
-		// Selenium Grid Local
-		driver.set(new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),caps));
-		
-		getDriver().navigate().to(BaseURL);
-	}
+	    @BeforeTest
+	    @Parameters({"browser"})
+	    public void setUp(@Optional("chrome") String browser) throws MalformedURLException {
+	    	driver = new ThreadLocal<RemoteWebDriver>(); 
+	        DesiredCapabilities capabilities = new DesiredCapabilities();
+	        capabilities.setCapability("browserName", browser);
+
+	        driver.set(new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),capabilities));
+
+	        getDriver().navigate().to(BaseURL);
+	    }
 
 	public WebDriver getDriver() 
 	{
